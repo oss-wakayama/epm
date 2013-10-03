@@ -20,7 +20,7 @@ public static void execute() throws Exception{
 	mkad.predictPart();
 	mkad.closeWriter();
 
-	MkArffFromFile mka = new MkArffFromFile(Util.FirstFile);
+	/*MkArffFromFile mka = new MkArffFromFile(Util.FirstFile);
 	System.out.println("reading file");
 	mka.readTXT(Util.thunderbirdTxt);
 	System.out.println("header will be printed");
@@ -30,7 +30,7 @@ public static void execute() throws Exception{
 	System.out.println("data will be printed");
 	mka.data();
 	System.out.println("writer will be closed");
-	mka.closeWriter();
+	mka.closeWriter();*/
 	//Util.FirstFile =Util.WorkingDir+Util.DebugFile;//debug
 	ExePredict e =new ExePredict();
 	System.out.println("veterizing");

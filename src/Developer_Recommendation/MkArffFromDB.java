@@ -23,7 +23,7 @@ public class MkArffFromDB extends MkArff {
 		int i=0;
 		 pw.println("@attribute body string");
 		 pw.print("@attribute class{");
-		 String sql = "select distinct login from issues,users where status_id=3 and users.id=assigned_to_id";
+		 String sql = "select distinct login from issues,users where status_id = 5 OR status_id = 3 and users.id=assigned_to_id";
 			access.setState(access.getCon().prepareStatement(sql));
 	        ResultSet Rs = access.getState().executeQuery();
 	        while(Rs.next()) {
@@ -36,7 +36,7 @@ public class MkArffFromDB extends MkArff {
 //=============================================================================//
 	public void data() throws Exception{
 		pw.println("@data");
-		String sql = "select login,subject,description from issues,users where status_id=3 and users.id=assigned_to_id";
+		String sql = "select login,subject,description from issues,users where status_id = 5 OR status_id = 3 and users.id=assigned_to_id";
 		access.setState(access.getCon().prepareStatement(sql));
         ResultSet Rs = access.getState().executeQuery();
         while(Rs.next()) {

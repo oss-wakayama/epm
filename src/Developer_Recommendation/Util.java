@@ -3,7 +3,8 @@ package Developer_Recommendation;
 public class Util {
 
 	public static String FirstFile;
-	 final public static  String WorkingDir = "epm/Developer_Recommendation/arff/";
+	 //final public static  String WorkingDir = "./epm/src/Developer_Recommendation/arff";
+	final public static  String WorkingDir = "";
 	 final public static String PlainFile = "test.arff";
 	 final public static String host = "oss27.sys.wakayama-u.ac.jp",
 			 					DB = "redmine",
